@@ -35,60 +35,93 @@
 
   <!-- Header -->
   <div class="intro-header">
-      <div class="container">
+    <div class="container">
 
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="intro-message">
-                      <h1>Landing Page</h1>
-                      <h3>A Template by Start Bootstrap</h3>
-                      <hr class="intro-divider">
-                      <ul class="list-inline intro-social-buttons">
-                          <li>
-                              <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                          </li>
-                          <li>
-                              <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                          </li>
-                          <li>
-                              <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Landing Page</h1>
+            <h3>A Template by Start Bootstrap</h3>
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+              <li>
+                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+              </li>
+              <li>
+                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+              </li>
+            </ul>
           </div>
-
+        </div>
       </div>
-      <!-- /.container -->
+
+    </div>
+    <!-- /.container -->
 
   </div>
   <!-- /.intro-header -->
 
 
+
+  <!-- Page Content -->
+
   <div class="container">
-    <div id="content">
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; ?>
-        <?php print render($title_suffix); ?>
+    <div class="row">
+      <!-- <hr class="section-heading-spacer">
+      <div class="clearfix"></div> -->
+      <div class="content">
+        <div class="col-sm-9">
+          <!-- <hr class="section-heading-spacer">
+          <div class="clearfix"></div> -->
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; ?>
+            <?php print render($title_suffix); ?>
 
-        <?php print render($messages); ?>
-        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-          <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+            <?php print render($messages); ?>
+            <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
-            <?php print render($page['content']); ?>
-          </div>
+                <?php print render($page['content']); ?>
+              </div>
 
-          <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar">
-              <?php print render($page['sidebar_first']); ?>
+
+
+              <!-- Sidebar -->
+
+              <div class="col-sm-3">
+                <!-- <hr class="section-heading-spacer"> -->
+                <!-- <div class="clearfix"></div> -->
+                <?php if ($page['sidebar_first']): ?>
+                  <div id="sidebar">
+                    <?php print render($page['sidebar_first']); ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+              <!-- end sidebar -->
+
             </div>
-          <?php endif; ?>
-
-          <div id="footer">
-            <?php if ($page['footer']): ?>
-              <?php print render($page['footer']); ?>
-            <?php endif; ?>
           </div>
-
         </div>
-      </div>
+          <!-- close wrapper for drupal -->
+
+
+          <!-- Footer -->
+          <footer id="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+
+                  <!-- <div id="footer"> -->
+                    <?php if ($page['footer']): ?>
+                      <p class="copyright text-muted small"><?php print render($page['footer']); ?></p>
+                    <?php endif; ?>
+                  <!-- </div> -->
+                </div>
+              </div>
+
+
+            </div>
+          </footer>
