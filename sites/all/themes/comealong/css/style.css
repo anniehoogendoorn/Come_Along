@@ -7,7 +7,7 @@
 .navbar {
   margin-bottom: 0px !important;
 }
-<<<<<<< HEAD
+
 .intro-header {
   height: 400px;
 
@@ -42,16 +42,16 @@ input:-ms-input-placeholder {
 }
 
 
-#footer {
+/*#footer {
   width: 100%;
   background: #ABB584;
   padding: 40px;
   vertical-align: bottom;
   background: linear-gradient(rgba(255,255,255,0.9), #ABB584);
-  border: 0;
-=======
+  border: 0;*/
+
 
 .content {
   margin-top: 30px;
->>>>>>> 54cd036c99b08b9cd699d958f2a16c6acb11756e
+
 }
