@@ -18,7 +18,7 @@
           </button>
 
           <!-- Drupal Header and Logo -->
-          <a class="navbar-brand topnav" href="#">Come Along</a>
+          <a class="navbar-brand topnav" href="/">Come Along</a>
           <!-- <img width="25px" height="25px" src="/<?php print $directory;?>/img/logo.png" alt="<?php print $site_name;?>" height="80" width="150" /> -->
         </div>
 
@@ -34,6 +34,9 @@
   </div>
 
   <!-- Header -->
+  <?php if (substr(request_path(), 0, 6) != "search"): ?>
+
+
   <div class="intro-header">
       <div class="container">
 
@@ -50,7 +53,7 @@
           </div>
         </div>
       </div>
-
+  <?php endif; ?>
   <!-- Page Content -->
 
   <div class="container">
