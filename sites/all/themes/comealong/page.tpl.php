@@ -43,6 +43,7 @@
           <div class="row">
               <div class="col-lg-12">
                   <div class="intro-message">
+                    <h1 class="catchphrase">Fund Your Trip With Friends!</h1>
                       <?php if ($page['search_bar']): ?>
                         <div id="search_bar">
                           <?php print render($page['search_bar']); ?>

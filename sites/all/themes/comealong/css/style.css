@@ -9,8 +9,12 @@
 }
 
 .intro-header {
-  height: 400px;
+  height: 600px;
 
+}
+
+.catchphrase {
+  font-size: 3.5em !important;
 }
 
 #custom-search-blocks-form-1 .form-text {
@@ -25,6 +29,11 @@
   color: #261534;
   text-align: left;
   padding-left: 20px;
+}
+
+.intro-message {
+  padding-top: 14em !important;
+  padding-bottom: 0px !important;
 }
 
 input:focus::-webkit-input-placeholder,
